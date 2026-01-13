@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sign Up - OSB Connect</title>
+<link rel="stylesheet" href="../CSS/home.css" />
+<link rel="icon" type="image/png" href="../MEDIA/icon.png" />
+</head>
+
+<body style="background:#f5f5f5; display:flex; justify-content:center; align-items:flex-start; min-height:100vh; padding-top:30px;">
+  <div
+    class="card"
+    style="max-width:400px; width:100%; padding:24px; text-align:center;"
+  >
+    <img
+      src="../MEDIA/logo_negru.png"
+      alt="Logo OSB Timișoara"
+      class="badge"
+      style="width:80px; height:80px; margin-bottom:16px;"
+    />
+
+    <h2>OSB Connect</h2>
+    <p class="subtle">
+      Creează un cont nou pentru a accesa platforma internă
+    </p>
+
+    <form
+      id="signupForm"
+      style="display:flex; flex-direction:column; gap:12px; margin-top:14px;"
+    >
+      <input
+        type="text"
+        id="nume"
+        placeholder="Nume"
+        required
+        style="padding:10px; border-radius:6px; border:1px solid #ccc;"
+      />
+
+      <input
+        type="text"
+        id="prenume"
+        placeholder="Prenume"
+        required
+        style="padding:10px; border-radius:6px; border:1px solid #ccc;"
+      />
+
+      <input
+        type="date"
+        id="data_nasterii"
+        placeholder="Data nașterii"
+        required
+        style="padding:10px; border-radius:6px; border:1px solid #ccc;"
+        max=""
+      />
+
+      <input
+        type="tel"
+        id="telefon"
+        placeholder="Telefon"
+        required
+        style="padding:10px; border-radius:6px; border:1px solid #ccc;"
+      />
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Email"
+        required
+        style="padding:10px; border-radius:6px; border:1px solid #ccc;"
+      />
+
+      <input
+        type="password"
+        id="password"
+        placeholder="Parolă"
+        required
+        style="padding:10px; border-radius:6px; border:1px solid #ccc;"
+      />
+
+      <input
+        type="password"
+        id="confirmPassword"
+        placeholder="Confirmă parola"
+        required
+        style="padding:10px; border-radius:6px; border:1px solid #ccc;"
+      />
+
+      <input
+        type="text"
+        id="universitate"
+        placeholder="Universitate"
+        required
+        style="padding:10px; border-radius:6px; border:1px solid #ccc;"
+      />
+
+      <input
+        type="text"
+        id="facultate"
+        placeholder="Facultate"
+        style="padding:10px; border-radius:6px; border:1px solid #ccc;"
+      />
+
+      <input
+        type="text"
+        id="specializare"
+        placeholder="Specializare"
+        style="padding:10px; border-radius:6px; border:1px solid #ccc;"
+      />
+
+      <input
+        type="number"
+        id="an_studiu"
+        placeholder="An studiu (1-6)"
+        min="1"
+        max="6"
+        required
+        style="padding:10px; border-radius:6px; border:1px solid #ccc;"
+      />
+
+      <select
+        id="program_studii"
+        required
+        style="padding:10px; border-radius:6px; border:1px solid #ccc;"
+      >
+        <option value="" disabled selected>Program studii</option>
+        <option value="Licenta">Licență</option>
+        <option value="Masterat">Masterat</option>
+        <option value="Doctorat">Doctorat</option>
+      </select>
+
+      <button class="btn" type="submit">Sign Up</button>
+
+      <a
+        class="btn ghost"
+        href="login.html"
+        style="text-align:center; line-height:28px;"
+        >Login</a
+      >
+    </form>
+
+    <p id="errorMsg" style="color:red; margin-top:10px;"></p>
+    <p id="successMsg" style="color:green; margin-top:10px;"></p>
+
+    <div
+      style="margin-top:12px; display:flex; justify-content:center; font-size:0.9rem;"
+    >
+      <a class="link" href="home.html">Acasă</a>
+    </div>
+  </div>
+
+  <script src="../JS/signup.js"></script>
+
+  <script>
+    // Setăm data max la azi pentru data_nasterii și data_contract (ca să nu fie viitoare)
+    const azi = new Date().toISOString().split("T")[0];
+    document.getElementById("data_nasterii").setAttribute("max", azi);
+  </script>
+</body>
+</html>

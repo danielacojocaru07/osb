@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acasă</title>
+<meta name="description" content="Acasă - OSB Timișoara • Voluntar">
+<link rel="stylesheet" href="../CSS/home.css">
+<link rel="icon" type="image/png" href="../MEDIA/icon.png">
+</head>
+<body>
+<div class="container">
+<header>
+    <div class="logo" aria-label="Logo OSB Timișoara placeholder">
+        <img src="../MEDIA/logo_negru.png" alt="Logo OSB Timișoara" class="badge">
+        <div>
+            <div class="title">OSB Timișoara</div>
+            <div class="subtle">Platformă internă - voluntar activ</div>
+        </div>
+    </div>
+
+    <div class="top-actions">
+        <div class="muted">Salut, <strong><span id="userPrenume">...</span> <span id="userNume">...</span></strong>!</div>
+        <a class="btn" href="profile.html">Profil</a>
+        <a class="btn ghost" href="login.html">Logout</a>
+    </div>
+</header>
+
+<main class="grid">
+<section>
+    <div class="card">
+        <h2>Bine ai venit, <strong><span id="userPrenume">...</span> <span id="userNume">...</span></strong>!</h2>
+        <p class="muted">Vezi mai jos ultimele anunțuri și proiectele active. Dacă ai nevoie de documente administrative, le găsești în secțiunea „Procese verbale”.</p>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+        <h2>Anunțuri recente</h2>
+        <div class="ann-list" aria-live="polite">
+            <article class="ann">
+                <div class="meta">12 oct 2025 • Admin</div>
+                <div class="text">Întâlnire voluntari: sâmbătă, ora 11:00 la CosPOL.</div>
+            </article>
+            <article class="ann">
+                <div class="meta">5 oct 2025 • CineMoldova</div>
+                <div class="text">Materiale distribuite pentru evenimentul "CineMoldova".</div>
+            </article>
+            <article class="ann">
+                <div class="meta">28 sep 2025 • Admin</div>
+                <div class="text">A fost publicat procesul verbal al ședinței BC din 25 septembrie.</div>
+            </article>
+            <div style="margin-top:10px;text-align:right">
+                <a class="link" href="announcements.html">Vezi toate anunțurile →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+        <h2>Proiecte active</h2>
+        <div class="projects">
+            <div class="project-card">
+                <div class="title">Team Building</div>
+                <div class="small">Coordonator: Alexandra Nevreanschi • Status: În desfășurare</div>
+            </div>
+            <div class="project-card">
+                <div class="title">Balul Bobocilor Basarabeni</div>
+                <div class="small">Coordonator: Daniil Voluța • Status: În desfășurare</div>
+            </div>
+            <div class="project-card">
+                <div class="title">Plecarea la Alba Iulia</div>
+                <div class="small">Coordonator: TBA • Status: Planificat</div>
+            </div>
+            <div class="project-card">
+                <div class="title">Cupa Caritabilă</div>
+                <div class="small">Coordonator: Valeria Fateeva • Status: Planificat</div>
+            </div>
+        </div>
+        <div style="margin-top:10px;text-align:right">
+            <a class="link" href="projects.html">Vezi toate proiectele →</a>
+        </div>
+    </div>
+</section>
+
+<aside class="right-col">
+    <div class="card section">
+        <h2>Departamente</h2>
+        <div class="dept-list">
+            <div class="dept-item"><strong>Relații Publice</strong><div class="subtle">Ultim anunț: 3 oct 2025</div></div>
+            <div class="dept-item"><strong>Social-Educațional</strong><div class="subtle">Ultim anunț: 30 sep 2025</div></div>
+            <div class="dept-item"><strong>Imagine & IT</strong><div class="subtle">Ultim anunț: 10 oct 2025</div></div>
+        </div>
+        <div style="margin-top:10px;text-align:right">
+            <a class="link" href="departments.html">Toate departamentele →</a>
+        </div>
+    </div>
+
+    <div class="card section">
+        <h2>Procese verbale</h2>
+        <div class="proc-list">
+            <div class="proc-item">
+                <div>Proces verbal • 25 sep 2025</div>
+                <div class="tag">PDF</div>
+            </div>
+            <div class="proc-item">
+                <div>Proces verbal • 10 iul 2025</div>
+                <div class="tag">PDF</div>
+            </div>
+            <div style="margin-top:10px;text-align:right">
+                <a class="link" href="pv_archive.html">Vezi arhiva →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card section">
+        <h2>Scurtări rapide</h2>
+        <div style="display:flex;flex-direction:column;gap:8px">
+            <a class="btn" href="event_signup.html">Înscrie-te la un eveniment</a>
+            <a class="btn ghost" href="submit_request.html">Trimite o cerere</a>
+        </div>
+    </div>
+</aside>
+</main>
+
+<footer>
+© OSB Timișoara • Platformă internă
+</footer>
+</div>
+<script src="../JS/home.js"></script>
+</body>
+</html>
